@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/finder.png" type="image/x-icon">
     <meta content="About This User" property="og:title" />
-    <meta name="og:description" content="This is a iMac G3 runing Mac OS X 10.0.4">
+    <meta name="og:description" content="Mac OS X (Build Vugbdok)
+Memory: 1024MB
+Processor: Human H16
+™ & © My Mom. 1986-2026">
     <meta name="og:author" content="Adrian Help from Thom">
     <meta property="og:image" content="https://vugbdok.github.io/img/HomeFolderIcon.png" />
     <meta content="#4a6d9c" data-react-helmet="true" name="theme-color" />
@@ -27,9 +30,10 @@
     <link rel="preload" href="data/assets/radio-checked.png" as="image">
     <link rel="preload" href="data/assets/radio-unchecked.png" as="image">
     <link rel="preload" href="img/pfp.jpg" as="image">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="container">
+    <div class="container-big">
         <!-- Main Window -->
         <div class="window" style="margin: 20px auto;">
             <div class="title-bar">
@@ -62,48 +66,104 @@
 
                 <div class="section-title">My social links are here!</div>
                 <div class="button-group">
-                    <button class="aqua-button" onclick="window.open('https://github.com/vugbdok')">
+                    <button class="secondary" onclick="window.open('https://github.com/vugbdok')">
                         <img src="img/HomeFolderIcon.png" class="link-icon">
-                        GitHub
+                            <span>GitHub</span>
                     </button>
-                    <button class="aqua-button" onclick="window.open('https://discord.com/users/1268772602227327083')">
+                    <button class="secondary" onclick="window.open('https://discord.com/users/1268772602227327083')">
                         <img src="img/GenericNetworkIcon.png" class="link-icon">
-                        Discord
+                            <span>Discord</span>
                     </button>
-                    <button class="aqua-button" onclick="window.open('https://github.com/vugbdok/vugbdok.github.io')">
+                    <button class="secondary" onclick="window.open('https://github.com/vugbdok/vugbdok.github.io')">
                         <img src="img/GenericApplicationIcon.png" class="link-icon">
-                        Source code
+                            <span>Source code</span>
                     </button>
                 </div>
-            </div>
-        </div>
-        <div class="container">
-            <!-- Main Window -->
-            <div class="window" style="margin: 20px auto;">
-                <div class="title-bar">
-                    <div class="traffic-lights">
-                        <div class="traffic-light close"></div>
-                        <div class="traffic-light minimize"></div>
-                        <div class="traffic-light maximize"></div>
-                    </div>
-                    <div class="title-bar-text">Adrian's Website</div>
-                </div>
-                <div class="window-body">
-                    <input class="input" type="checkbox">
-                    </input>
-                </div>
-            </div>
-        <!-- Footer -->
-        <div class="window footer">
-            <div class="window-body">
-                <p><strong>Site</strong></p>
-                <p>© <span id="year">2026</span> Vugbdok - All rights reserved.</p>
-                <p><strong>Assets</strong></p>
-                <p>© <span id="year">2001</span> Apple Inc. - All rights reserved.</p>
             </div>
         </div>
     </div>
-
+    <div class="container-min">
+        <!-- Test Window -->
+        <div class="window" style="margin: 20px auto;">
+            <div class="title-bar">
+                <div class="traffic-lights">
+                    <div class="traffic-light close"></div>
+                    <div class="traffic-light minimize"></div>
+                    <div class="traffic-light maximize"></div>
+                </div>
+                <div class="title-bar-text">Test Window Min</div>
+            </div>
+            <div class="window-body">
+                <input class="input" type="checkbox">
+                </input>
+                <input class="input" type="radio">
+                </input>
+                <hr>
+                <button class="secondary">
+                    Test Light
+                </button>
+                <button class="primary">
+                    Test Dark
+                </button>
+                <button class="secondary">
+                    <img src="img/GenericApplicationIcon.png" class="link-icon"> Test Light img
+                </button>
+                <button class="primary">
+                    <img src="img/GenericApplicationIcon.png" class="link-icon"> Test Dark img
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="container-big">
+        <!-- Test Window -->
+        <div class="window" style="margin: 20px auto;">
+            <div class="title-bar">
+                <div class="traffic-lights">
+                    <div class="traffic-light close"></div>
+                    <div class="traffic-light minimize"></div>
+                    <div class="traffic-light maximize"></div>
+                </div>
+                <div class="title-bar-text">Test Window Big</div>
+            </div>
+            <div class="window-body">
+                <input class="input" type="checkbox">
+                </input>
+                <input class="input" type="radio">
+                </input>
+                <hr>
+                <button class="secondary">
+                    Test Light
+                </button>
+                <button class="primary">
+                    Test Dark
+                </button>
+                <button class="secondary">
+                    <img src="img/GenericApplicationIcon.png" class="link-icon"> Test Light img
+                </button>
+                <button class="primary">
+                    <img src="img/GenericApplicationIcon.png" class="link-icon"> Test Dark img
+                </button>
+                <button class="aqua-button">
+                    Old
+                </button>
+            </div>
+        </div>
+    </div>
+        <!-- Footer -->
+        <div class="container-foot">
+            <div class="windowf footer">
+                <div class="window-body">
+                    <p><strong>Site</strong></p>
+                    <p>© <span id="year">2026</span> Vugbdok - All rights reserved.</p>
+                    <p><strong>Assets</strong></p>
+                    <p>© <span id="year">2001</span> Apple Inc. - All rights reserved.</p>
+                </div>
+            </div>
+        </div>
     <script src="data/script.js"></script>
+    
+<button class="secondary"><span>Cancel</span></button>
+<button class="primary"><span>Save</span></button>
+    
 </body>
 </html>
