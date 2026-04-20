@@ -69,7 +69,7 @@ body {
 
 .traffic-light { width: 21px; height: 21px; flex-shrink: 0; background-size: contain; background-repeat: no-repeat; cursor: default; }
 
-.traffic-light.close    { background-image: url('assets/close-normal.png'); }
+.traffic-light.close    { background-image: url('assets/close-normal.svg'); }
 .traffic-light.minimize { background-image: url('assets/minimize-normal.png'); }
 .traffic-light.maximize { background-image: url('assets/maximize-normal.png'); }
 
