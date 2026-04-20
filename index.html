@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/finder.png" type="image/x-icon">
+    <link rel="shortcut icon" href="data/assets/web/finder.png" type="image/x-icon">
     <meta content="About This User" property="og:title" />
-    <meta name="og:description" content="**Mac OS X**
+    <meta name="og:description" content="Mac OS X
 
-(Build Vugbdok)
+(Build 16.4.20)
 
 Memory: 1024MB
 Processor: Human H16
 
 ™ & © My Mom. 1986-2026">
+    <meta content="About This User" property="og:title" />
     <meta name="og:author" content="Adrian Help from Thom">
     <meta property="og:image" content="https://vugbdok.github.io/img/MacOS10.0PB.png" />
-    <meta content="#eb4034" data-react-helmet="true" name="theme-color" />
+    <meta content="#849ec6" data-react-helmet="true" name="theme-color" />
     <title>About This User</title>
     <link rel="stylesheet" href="data/styles.css">
     <link rel="preload" href="data/LucidaGrande-01.ttf" as="font" type="font/ttf" crossorigin>
@@ -33,10 +34,24 @@ Processor: Human H16
     <link rel="preload" href="data/assets/checkbox-unchecked.png" as="image">
     <link rel="preload" href="data/assets/radio-checked.png" as="image">
     <link rel="preload" href="data/assets/radio-unchecked.png" as="image">
+    <link rel="preload" href="img/MacOS10.0PB.png" as="image">
     <link rel="preload" href="img/pfp.jpg" as="image">
+    <link rel="preload" href="img/GenericNetworkIcon.png" as="image">
+    <link rel="preload" href="img/HomeFolderIcon.png" as="image">
+    <link rel="preload" href="img/GenericApplicationIcon.png" as="image">
+    <link rel="preload" href="img/info.png" as="image">
+    <link rel="preload" href="data/wall.png" as="image">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <div class="title-bar">
+        <div class="traffic-lights">
+            <div class="traffic-light close"></div>
+            <div class="traffic-light minimize"></div>
+            <div class="traffic-light maximize"></div>
+        </div>
+        <div class="title-bar-text"><img src="img/info.png" class="title-icon"> About This User</div>
+    </div>
     <div class="container-big">
         <!-- Main Window -->
         <div class="window" style="margin: 20px auto;">
@@ -65,6 +80,7 @@ Processor: Human H16
             
                 <div class="section-title">Things I work on.</div>
                 <p>Am working for a Homebrew project that revives the <strong>Nintendo 3DS eShop</strong> called <strong>Brewtendo</strong></p>
+                <img src="img/pfp.jpg" class="profile-pic" alt="Vugbdok PFP">
 
                 <hr>
 
