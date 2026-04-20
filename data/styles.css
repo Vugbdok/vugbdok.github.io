@@ -20,13 +20,7 @@ body {
     color: #000;
     min-height: 100vh;
     background-color: #4a6d9c;
-    background-image: repeating-linear-gradient(
-        to bottom,
-        rgba(255,255,255,0.055) 0px,
-        rgba(255,255,255,0.055) 1px,
-        rgba(0,0,0,0.045) 1px,
-        rgba(0,0,0,0.045) 2px
-    );
+    background-image:
     margin: 20px;
 }
 
@@ -60,7 +54,7 @@ body {
 
 .traffic-lights { display: flex; gap: 1px; align-items: center; z-index: 1; }
 
-.traffic-light { width: 22px; height: 22px; flex-shrink: 0; background-size: contain; background-repeat: no-repeat; cursor: default; }
+.traffic-light { width: 21px; height: 21px; flex-shrink: 0; background-size: contain; background-repeat: no-repeat; cursor: default; }
 
 .traffic-light.close    { background-image: url('assets/close-normal.png'); }
 .traffic-light.minimize { background-image: url('assets/minimize-normal.png'); }
@@ -101,7 +95,7 @@ body {
 }
 
 .profile-header { position: absolute; top: 0; left: 120px; }
-.profile-bio    { position: absolute; bottom: 0; left: 120px; }
+.profile-bio    { position: absolute; bottom: 0; top: 25px; left: 120px; }
 
 .window-title { font-size: 15px; font-weight: bold; color: #111; text-shadow: 0 1px 0 rgba(255,255,255,0.7); }
 .section-title { font-size: 13px; font-weight: bold; margin: 0 0 5px 0; color: #111; text-shadow: 0 1px 0 rgba(255,255,255,0.7); }
@@ -147,7 +141,8 @@ hr::after {
 .aqua-button:hover  { filter: brightness(1.08) saturate(1.1); }
 .aqua-button:active { filter: brightness(0.9); box-shadow: 0 1px 2px rgba(0,0,0,0.2), inset 0 2px 5px rgba(0,40,120,0.3); }
 
-.link-icon { width: 16px; height: 16px; vertical-align: middle; flex-shrink: 0; image-rendering: pixelated; }
+.link-icon { width: 16px; height: 16px; vertical-align: middle; }
+.title-icon { width: 16px; height: 16px; vertical-align: top; }
 
 input[type="checkbox"] {
     appearance: none; -webkit-appearance: none;
