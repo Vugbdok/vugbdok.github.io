@@ -21,6 +21,16 @@ Processor: Human H10
     <link rel="stylesheet" href="data/styles.css">
     <link rel="preload" href="data/LucidaGrande-01.ttf" as="font" type="font/ttf" crossorigin>
     <link rel="preload" href="data/LucidaGrande-Bold-02.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="data/assets/wall.png" as="image">
+    <link rel="preload" href="data/assets/ThingsIDo/imgbg.png" as="image">
+    <link rel="preload" href="data/assets/AboutThisUser/pfp.jpg" as="image">
+    <link rel="preload" href="data/assets/icons/blue-apple-logo-icon-0.png" as="image">
+    <link rel="preload" href="data/assets/ThingsIDo/example-1.png" as="image">
+    <link rel="preload" href="data/assets/icons/GenericNetworkIcon.png" as="image">
+    <link rel="preload" href="data/assets/icons/HomeFolderIcon.png" as="image">
+    <link rel="preload" href="data/assets/icons/GenericApplicationIcon.png" as="image">
+    <link rel="preload" href="data/assets/icons/InternetLocationGeneric.png" as="image">
+    <link rel="preload" href="data/assets/icons/info.png" as="image">
     <link rel="preload" href="data/assets/windows/close-normal.png" as="image">
     <link rel="preload" href="data/assets/windows/close-hover.png" as="image">
     <link rel="preload" href="data/assets/windows/close-active.png" as="image">
@@ -34,18 +44,13 @@ Processor: Human H10
     <link rel="preload" href="data/assets/windows/checkbox-unchecked.png" as="image">
     <link rel="preload" href="data/assets/windows/radio-checked.png" as="image">
     <link rel="preload" href="data/assets/windows/radio-unchecked.png" as="image">
-    <link rel="preload" href="data/assets/web/MacOS10.0PB.png" as="image">
-    <link rel="preload" href="data/assets/AboutThisUser/pfp.jpg" as="image">
-    <link rel="preload" href="data/assets/icons/GenericNetworkIcon.png" as="image">
-    <link rel="preload" href="data/assets/icons/HomeFolderIcon.png" as="image">
-    <link rel="preload" href="data/assets/icons/GenericApplicationIcon.png" as="image">
-    <link rel="preload" href="data/assets/icons/info.png" as="image">
-    <link rel="preload" href="data/assets/wall.png" as="image">
 </head>
 <body>
-    <div class="title-bar">
-        <!--<a><img src="data/assets/windows/close-normal.png"></img></a>-->
-        <div class="title-bar-text">Mac OS X ⚠️WIP⚠️</div>
+    <div class="top-bar">
+        <div class="bar-text bold">Vugbdok</div>
+        <div class="bar-items">
+            <div class="bar-item apple"></div>
+        </div>
     </div>
     <div class="container-big">
         <!-- Main Window -->
@@ -66,22 +71,13 @@ Processor: Human H10
                         <div class="section-title">My Bio</div>
                         <div class="profile-bio">
                             <p>I am a maker that makes things in scratch.
-                                <br>I go by different online aliases like (Agent 8), (Vugbdok), (VugbKat), (ididntcreateWiiU), (IcreateWiiU124).
+                                <br>I go by different online aliases like (Agent 8), (Vugbdok), (VugbKat), (ididntcreateWiiU) and (IcreateWiiU124).
                                 <br>I live in NJ USA and am 16 currently in High School.
                             </p>
                         </div>
                     </div>
                 </div>
                 <hr>
-                <div class="center-all">
-                    <div class="section-title">Things I work on.</div>
-                    <p>Am working for a Homebrew project that revives the <strong>Nintendo 3DS eShop</strong> called <strong>Brewtendo</strong></p>
-                    <br>
-                    <img src="data/assets/AboutThisUser/imgbg.png" class="img-brew" alt="Brewtendo Icon">
-                </div>
-               <hr>
-                <!--<p>Am working on Homebrew project that revives the <strong>Nintendo 3DS eShop</strong> called <strong>Brewtendo</strong></p>
-                <hr-->
                 <div class="center-all">
                     <div class="section-title">My social links are here! </div>
                     <div class="button-group">
@@ -103,7 +99,7 @@ Processor: Human H10
         </div>
     </div>
     <div class="container-min">
-        <!-- Test Window --
+        <!-- Things Window -->
         <div class="window" style="margin: 20px auto;">
             <div class="title-bar">
                 <div class="traffic-lights">
@@ -111,31 +107,53 @@ Processor: Human H10
                     <div class="traffic-light minimize"></div>
                     <div class="traffic-light maximize"></div>
                 </div>
-                <div class="title-bar-text">Test Window Min</div>
+                <div class="title-bar-text">Things I Do</div>
             </div>
             <div class="window-body">
-                <input class="input" type="checkbox">
-                </input>
-                <input class="input" type="radio">
-                </input>
-                <hr>
-                <button class="secondary">
-                    Test Light
+            <div class="center-all">
+                    <div class="section-title" style="font-size: 15px;">Brewtendo</div>
+                    <p>Am working for a Homebrew project that revives the <strong>Nintendo 3DS eShop</strong>
+                    <p>and other similar Nintendo 3DS services called <strong>Brewtendo.</strong></p>
+                    <br>
+                    <img src="data/assets/ThingsIDo/imgbg.png" class="img-brew" alt="Brewtendo Icon">
+            <br>
+            <div class="button-group">
+                <button class="primary" onclick="window.open('https://discord.com/invite/brewtendo')">
+                <img src="data/assets/icons/GenericNetworkIcon.png" class="link-icon">
+                    Brewtendo Discord
                 </button>
-                <button class="primary">
-                    Test Dark
-                </button>
-                <button class="secondary">
-                    <img src="data/assets/icons/GenericApplicationIcon.png" class="link-icon"> Test Light img
-                </button>
-                <button class="primary">
-                    <img src="data/assets/icons/GenericApplicationIcon.png" class="link-icon"> Test Dark img
+                <button class="primary" onclick="window.open('https://brewtendo.org')">
+                <img src="data/assets/icons/InternetLocationGeneric.png" class="link-icon">
+                    Brewtendo Site
                 </button>
             </div>
         </div>
-    </div>
-    <div class="container-big">
-        <!-- Test Window --
+            <hr>
+            <div class="center-all">
+                    <div class="section-title" style="font-size: 15px;">DSiMart</div>
+                    <p>Am working with Wii Mart to help with a new homebrew project
+                    <p>that revives the <strong>Nintendo DSi Shop</strong> called <strong>DSiMart.</strong></p>
+                    <br>
+                    <img src="data/assets/ThingsIDo/example-1.png" class="img-mart" alt="DSiMartEX">
+                    <br>
+                    <div class="button-group">
+                        <button class="primary" onclick="window.open('https://dsimart.org/')">
+                            <img src="data/assets/icons/InternetLocationGeneric.png" class="link-icon">
+                                DSiMart Site
+                        </button>
+                        <button class="primary" onclick="window.open('https://discord.gg/wiimart/')">
+                            <img src="data/assets/icons/GenericNetworkIcon.png" class="link-icon">
+                                WiiMart Discord
+                        </button>
+                        <button class="primary" onclick="window.open('https://wiimart.org/')">
+                            <img src="data/assets/icons/InternetLocationGeneric.png" class="link-icon">
+                                WiiMart Site
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Make Window --
         <div class="window" style="margin: 20px auto;">
             <div class="title-bar">
                 <div class="traffic-lights">
@@ -143,32 +161,52 @@ Processor: Human H10
                     <div class="traffic-light minimize"></div>
                     <div class="traffic-light maximize"></div>
                 </div>
-                <div class="title-bar-text">Test Window Big</div>
+                <div class="title-bar-text">Things I Make</div>
             </div>
             <div class="window-body">
-                <input class="input" type="checkbox">
-                </input>
-                <input class="input" type="radio">
-                </input>
-                <hr>
-                <button class="secondary">
-                    Test Light
+            <div class="center-all">
+                    <div class="section-title" style="font-size: 15px;">Metro OS</div>
+                    <p>Am working for a Homebrew project that revives the <strong>Nintendo 3DS eShop</strong>
+                    <p>and other similar Nintendo 3DS services called <strong>Brewtendo.</strong></p>
+                    <br>
+                    <img src="data/assets/ThingsIMake/imgbg.png" class="img-brew" alt="Brewtendo Icon">
+            <br>
+            <div class="button-group">
+                <button class="primary" onclick="window.open('https://discord.com/invite/brewtendo')">
+                <img src="data/assets/icons/GenericNetworkIcon.png" class="link-icon">
+                    Brewtendo Discord
                 </button>
-                <button class="primary">
-                    Test Dark
-                </button>
-                <button class="secondary">
-                    <img src="data/assets/icons/GenericApplicationIcon.png" class="link-icon"> Test Light img
-                </button>
-                <button class="primary">
-                    <img src="data/assets/icons/GenericApplicationIcon.png" class="link-icon"> Test Dark img
-                </button>
-                <button class="aqua-button">
-                    Old
+                <button class="primary" onclick="window.open('https://brewtendo.org')">
+                <img src="data/assets/icons/InternetLocationGeneric.png" class="link-icon">
+                    Brewtendo Site
                 </button>
             </div>
         </div>
-    </div>
+            <hr>
+            <div class="center-all">
+                    <div class="section-title" style="font-size: 15px;">Oxygen OS</div>
+                    <p>Am working with Wii Mart to help with a new homebrew project
+                    <p>that revives the <strong>Nintendo DSi Shop</strong> called <strong>DSi Mart.</strong></p>
+                    <br>
+                    <img src="data/assets/ThingsIMake/example-1.png" class="img-mart" alt="DSi MartEX">
+                    <br>
+                    <div class="button-group">
+                        <button class="primary" onclick="window.open('https://dsimart.org/')">
+                            <img src="data/assets/icons/InternetLocationGeneric.png" class="link-icon">
+                                DSi Mart Site
+                        </button>
+                        <button class="primary" onclick="window.open('https://discord.gg/wiimart/')">
+                            <img src="data/assets/icons/GenericNetworkIcon.png" class="link-icon">
+                                Wii Mart Discord
+                        </button>
+                        <button class="primary" onclick="window.open('https://wiimart.org/')">
+                            <img src="data/assets/icons/InternetLocationGeneric.png" class="link-icon">
+                                Wii Mart Site
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- Footer -->
         <div class="container-foot">
             <div class="windowf footer">
@@ -176,7 +214,7 @@ Processor: Human H10
                     <p><strong>Site</strong></p>
                     <p>© <span id="year">2026</span> Vugbdok - All rights reserved.</p>
                     <p><strong>Assets</strong></p>
-                    <p>© <span id="year">2001</span> Apple Inc. - All rights reserved.</p>
+                    <p>Copyright © <span id="year">2026</span> Apple Inc. All rights reserved.</p>
                 </div>
             </div>
         </div>
