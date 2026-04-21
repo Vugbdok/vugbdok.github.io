@@ -31,6 +31,7 @@ body {
 /*Window Types*/
 .container-big { max-width: 800px; margin: 0 auto; }
 .container-min { max-width: 700px; margin: 0 auto; }
+.container-small { max-width: 500px; margin: 0 auto; }
 .container-foot { max-width: 350px; margin: 0 auto; }
 
 /*Windows*/
@@ -249,6 +250,14 @@ p strong { font-weight: bold; }
     border-radius: 5px;
     border: 1px solid rgba(0,0,0,0.28);
     box-shadow: 0 3px 8px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.5);
+}
+
+.img-metro {
+    width: 270px; object-fit: cover; flex-shrink: 0;
+}
+
+.img-oxy {
+    width: 320px; object-fit: cover; flex-shrink: 0;
 }
 
 img.gif {
