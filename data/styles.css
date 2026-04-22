@@ -253,7 +253,7 @@ p strong { font-weight: bold; }
 }
 
 .img-metro {
-    width: 270px; object-fit: cover; flex-shrink: 0;
+    width: 208px; object-fit: cover; flex-shrink: 0;
 }
 
 .img-oxy {
