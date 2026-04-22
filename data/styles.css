@@ -71,7 +71,7 @@ body {
     align-items: center;
     padding: 0 10px;
     border-bottom: 1px solid #808080;
-    position: relative;
+    position: revert-layer;
     user-select: none;
     box-shadow: inset 0 1px 0 rgba(255,255,255,0.9);
 }
@@ -92,6 +92,28 @@ body {
     box-shadow: inset 0 1px 0 rgba(255,255,255,0.9);
 }
 
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 28px; /* Drops down exactly below the 28px top bar */
+    left: 0;
+    background: rgba(240, 240, 240, 0.95);
+    border: 1px solid #808080;
+    box-shadow: 2px 4px 10px rgba(0,0,0,0.3);
+    min-width: 200px;
+    padding: 4px 0;
+    border-radius: 0 0 5px 5px;
+}
+
+.menu-item {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    cursor: default;
+}
+
 .bar-items {
     display: flex;
     gap: 1px;
@@ -105,7 +127,6 @@ body {
     flex-shrink: 0;
     background-size: contain;
     background-repeat: no-repeat;
-    cursor: default;
 }
 
 .bar-text {
@@ -117,18 +138,72 @@ body {
     text-shadow: 0 1px 0 rgba(255,255,255,0.8);
     white-space: nowrap;
 }
+
+.menu-item:hover .dropdown {
+    display: block;
+}
+
 .bar-text.bold { font-weight: bold; }
 
-.bar-item.apple { background-image: url('assets/icons/blue-apple-logo-icon-0.png'); }
-.bar-item.apple:hover { background-image: url('assets/windows/close-hover.png'); }
-.bar-item.apple:active { background-image: url('assets/windows/close-active.png'); }
+.bar-item.apple {
+    width: 17px;
+    height: 17px;
+    background-image: url('assets/icons/blue-apple-logo-icon-0.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.menu-item:hover, .menu-item.active { background: linear-gradient(to bottom,
+    #dedede 0%, #cccccc 15%, #bdbdbd 48%,
+    #b5b5b5 50%, #c2c2c2 52%, #d6d6d6 70%, #e2e2e2 100% );
+}
+
+.dropdown a {
+    display: block;
+    padding: 3px 20px;
+    color: #000;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.dropdown a:hover {
+    background: #0058d0;
+    color: #ffffff;
+}
+
+.dropdown a:active {
+    background: #0044a2;
+    color: #ffffff;
+}
+
+.menu-hr {
+    margin: 6px 0;
+    border: none;
+    border-top: 1px solid #c0c0c0;
+    box-shadow: 0 1px 0 #ffffff;
+}
+
+.menu-item:hover .menu-text, .menu-item.active .menu-text {
+    color: #ffffff;
+    text-shadow: none;
+}
+
+.menu-text {
+    font-size: 13px;
+    color: #2a2a2a;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.8);
+    white-space: nowrap;
+}
+
+.menu-item.bold .menu-text {
+    font-weight: bold;
+}
 
 /*OSX traffic light buttons*/
 .traffic-lights {
     display: flex;
     gap: 1px;
     align-items: center;
-    z-index: 1;
 }
 
 .traffic-light {
